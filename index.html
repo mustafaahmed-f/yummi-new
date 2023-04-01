@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div class="loaderContent position-fixed top-0 start-0 bottom-0 end-0 bg-dark justify-content-center align-items-center" id="loader">
+            <span class="loader">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </span>
+        </div>
+
+        <div class="sideNavBar position-fixed  top-0 bottom-0 vh-100 d-flex">
+            <div class="nav-left p-4 vh-100  text-white d-flex flex-column justify-content-between position-relative ">
+
+                <div class="links d-block p-y  ">
+                    <ul class="list-unstyled overflow-hidden position-absolute">
+                        <li id="search" name="navBtns" class="position-relative">Search</li>
+                        <li id="categories" name="navBtns"  class="position-relative">Categories</li>
+                        <li id="area" name="navBtns"  class="position-relative">Area</li>
+                        <li id="ingredients" name="navBtns"  class="position-relative">Ingredients</li>
+                        <li id="contactUs" name="navBtns"  class="position-relative">Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="navContact">
+                    <div class="socialIcons d-flex justify-content-start">
+                        <div class="pe-2"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="pe-2"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="pe-2"><i class="fa-solid fa-globe"></i></div>
+                    </div>
+                    <div class="CopyRights">
+                        <p>Copyright Â© 2019 All Rights
+                            <br>
+                            Reserved.</p>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <div class="nav-right bg-white px-2 py-4 vh-100  text-dark d-flex flex-column justify-content-between position-relative" >
+                <img src="img/logo.png" alt="">
+                <div id="closeBtn" class="d-flex justify-content-center align-items-center">☰</div>
+                <div class="">
+                    <div class="d-block py-1 d-flex justify-content-center"><i class="fa-solid fa-globe"></i></div>
+                    <div class="d-block py-1 d-flex justify-content-center"><i class="fa-solid fa-share-nodes"></i></div>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        <section id="showSec" class="py-3 vw-100 vh-100 ">
+            
+
+            <div class="container">
+
+                <div id="searchBar w-100" class="searchBar">
+                    <div class="d-flex py-3 ">
+                        <div class="w-50 px-3">
+                        <input type="text" class=" text-white w-100 bg-transparent border border-white rounded-2 py-2 px-2" id="searchByName"
+                        placeholder="Search by Name">
+                        </div>
+                        <div class="w-50 px-3">
+                        <input type="text" maxlength="1" class="text-white w-100 bg-transparent border border-white rounded-2 py-2 px-2" id="searchByFirstLetter"
+                        placeholder="Search By First Letter">
+                        </div>
+                    </div>
+                </div>
+
+               <div id="showMeals" class="showMeals py-4">
+                <div class="row">
+                
+                    
+                </div>
+               </div>
+
+               <div id="showCategories" class="showMeals py-4">
+                <div class="row">
+                
+                    
+                </div>
+               </div>
+               
+
+               <div id="areaSec" class="showMeals py-4">
+                <div class="row">
+                
+                    
+                </div>
+               </div>
+
+               <div id="ingredientsSec" class="showMeals py-4">
+                <div class="row">
+                
+                    
+                </div>
+               </div>
+
+            </div>
+        </section>
+
+     
+        <section id="detailsSec" class="py-5 vw-100 vh-100   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div>
+                            <img src="" class="w-100" alt="" id="mealImgInDetails">
+                            <h3 class="mealNameinDetails text-white" id="mealNameinDetails"></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="text-white">
+                            <h3>Instructions</h3>
+                            <p class="instructions" id="instructions"></p>
+                            <h3>Area : <span class="areaInDetails" id="areaInDetails"></span></h3>
+                            <h3>Category : <span class="categorIinDetails" id="categorIinDetails"></span></h3>
+                            <h3>Recipes :</h3>
+                            <ul class="measures list-unstyled d-flex flex-wrap " id="measures">
+                                
+                            </ul>
+                            <h3 class="mb-3">Tags :</h3>
+                            <div>
+                                <a target="_blank" href="" class="btn btn-success" id="source">Source</a>
+                                <a target="_blank" href="" class="btn btn-danger" id="youtube">Youtube</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contactSec" >
+            <div class="d-flex py-2 vw-100 vh-100 justify-content-center align-items-center">
+                <div class="container w-75" id="allInputs">
+                    <h3 class="text-white">ContactUs..</h3>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <div>
+                                    <input type="text" class="w-100 bg-white text-dark form-control" id="contactName" placeholder="Enter Your Name">
+                                    <div class="alert alert-danger w-100 mt-2 text-center alerts" id="nameAlert"><p class="mb-0">Special characters and numbers not allowed</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div>
+                                    <input type="text" class="w-100 bg-white text-dark form-control" id="contactEmail" placeholder="Enter Your Email">
+                                    <div class="alert alert-danger w-100 mt-2 text-center alerts" id="emailAlert"><p class="mb-0">Email not valid *exemple@yyy.zzz</p></div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-1" >
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <div>
+                                    <input type="text" class="w-100 bg-white text-dark form-control" id="contactPhone" placeholder="Enter Your Phone">
+                                    <div class="alert alert-danger w-100 mt-2 text-center alerts" id="phoneAlert"><p class="mb-0">Enter valid Phone Number</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div>
+                                    <input type="number" class="w-100 bg-white text-dark form-control" id="contactAge" placeholder="Enter Your Age">
+                                    <div class="alert alert-danger w-100 mt-2 text-center alerts" id="ageAlert"><p class="mb-0">Enter valid age</p></div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-1" >
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <div>
+                                    <input type="password" class="w-100 bg-white text-dark form-control" id="contactPassword" placeholder="Enter Your Password">
+                                    <div class="alert alert-danger w-100 mt-2 text-center alerts" id="passwordAlert"><p class="mb-0">Enter valid password *Minimum eight characters, at least one letter and one number:*</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div>
+                                    <input type="password" class="w-100 bg-white text-dark form-control" id="contactRepassword" placeholder="Repassword">
+                                    <div class="alert alert-danger w-100 mt-2 text-center alerts" id="repasswordAlert"><p class="mb-0">Enter valid repassword</p></div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <button class="btn btn-danger mt-3 submitBtn disabled" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="Java/main.js" type="module"></script>
+        
+    </body>
+</html>
